@@ -9,6 +9,7 @@ import Image from "next/image";
 const Header = async ({ isAdminPage = false }) => {
  const user = await checkUser();
   const isAdmin = user?.role === "ADMIN";
+   
 
   return (
     <header className="fixed top-0 w-full bg-grey/80 backdrop-blur-md z-50 border-b">
